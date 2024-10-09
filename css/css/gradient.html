@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .gradient{
+            height: 200px;
+            width:300px;
+            /* background: linear-gradient(to top, #0ff,#ff0,#00f,#f00); */
+            background: linear-gradient(145deg,rgb(0,255,115)10%, #ff0 20%, #00f 30%, #f00 50%);
+        }
+        .gradient1{
+            height: 200px;
+            width:200px;
+            background: radial-gradient(circle,green,yellow,red);
+            border-radius: 50%;
+        }
+        .gradient2{
+            height: 200px;
+            width:200px;
+            /* background-image: conic-gradient(purple, pink , navy); */
+            /* background: conic-gradient(from -75deg,purple, pink ,navy); */
+            /* background: conic-gradient(at 80% 20%,purple, pink ,navy); */
+            background: conic-gradient(purple 45deg, pink -75deg, navy);
+        
+        }
+        .conic{
+            height: 200px;
+            width:200px;
+            border-radius: 50%;
+            background: conic gradient(red 0deg,red 90deg,blue 90deg,blue 180deg,green 180deg,green 270deg,yellow 270deg,yellow 360deg );
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient"></div>
+    <div class="gradient1"></div>
+    <div class="gradient2"></div>
+    <div class="conic"></div>
+    
+</body>
+</html>

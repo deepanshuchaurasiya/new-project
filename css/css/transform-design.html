@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .outer{
+        height: 200px;
+        width: 200px;
+        margin:100px auto;
+        position:relative;
+
+    }
+    .inner{
+        height: 200px;
+        width:200px;
+        background-color: tomato;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        transform: rotate(45deg);
+        transition:all ease 50;
+        margin: 10px;
+        z-index: -1;
+        transform-origin: 20%;
+    }
+    .outer-hover.inner{
+        transform: rotate(360deg);
+
+    }
+    </style>
+</head>
+<body>
+    <div class="outer"></div>
+    <div class="inner"></div>
+</body>
+</html>

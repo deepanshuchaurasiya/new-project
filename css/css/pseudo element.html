@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: red;
+            color: #fff;
+        }
+        h1::after{
+            content: "Private Limited";
+            background-color: red;
+            color: #fff;
+        }
+
+        h1::before{
+            content: "Techsima";
+            background-color: chartreuse;
+        }
+        div::after{
+            content: "techsima";
+            height: 5px;
+        }
+        p::selection{
+            background:teal;
+            color:red; 
+        }
+       
+    </style>
+</head>
+<body>
+    <div>code your </div>
+    <h1>solution</h1>
+    <input type="text" placeholder="Enter your name">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia!</p>
+    
+</body>
+</html>

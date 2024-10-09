@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinater</title>
+    <style>
+        .section1 .box{
+            height: 200px;
+            width: 100%;
+            border: 2px solid #000;
+        }
+        .section2.box{
+            height: 200px;
+            width: 100%;
+            background-color: rgb(64, 44, 44);
+        }
+        .box>p{
+            color: pink;
+        }
+        .box~p{
+            color:aqua;
+        }
+        .box+p{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <div class="box">
+            <p>Techsima Private Limited Solution</p>
+            <p>Techsima Private Limited Solution</p>
+            <p>Techsima Private Limited Solution</p>
+            <p>Techsima Private Limited Solution</p>
+            <p>Techsima Private Limited Solution</p>
+        </div>
+        <p>Techsima Private Limited Solution</p>
+        <p>Techsima Private Limited Solution</p>
+        <p>Techsima Private Limited Solution</p>
+        <p>Techsima Private Limited Solution</p>
+        <p>Techsima Private Limited Solution</p>
+
+    </section>
+    <section class="section2">
+        <div class="box"></div>
+    </section>
+    
+</body>
+</html>
